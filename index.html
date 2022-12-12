@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        color1: '#7b633b',
+                        color2: '#f6f3ee',
+                        color3: '#17130b',
+                    },
+                    height: {
+                        caro: "400px",
+                        caro1: "500px",
+                        caro2: "600px",
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Navbar section  -->
+    <nav class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-50 top-0 left-0 font-serif">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="index.html" class="flex items-center text-2xl text-color1 font-serif gap-1">
+                <i class="ph-heart"></i>
+                <span class="self-center text-xl font-semibold whitespace-nowrap">Wed</span>
+            </a>
+            <div class="flex md:order-2">
+                <a href="http://quickverify.ng/" target="_blank"
+                    class="text-white text-base transition-all duration-300 bg-color1 hover:bg-stone-700 focus:outline-none flex items-center gap-0 hover:gap-1 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Get
+                    Verified <i class="ph-arrow-circle-right text-lg"></i></a>
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex transition duration-300 items-center p-2 text-sm hover:text-gray-200 text-color1 border border-color1 rounded-lg md:hidden hover:bg-color1 focus:outline-none"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul
+                    class="flex flex-col p-4 mt-4 bg-color2 rounded-lg border border-color1 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 transition duration-300 text-color1 rounded md:bg-transparent md:text-color3 hover:bg-color1 hover:text-color2 md:px-4 md:py-2 ">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 transition duration-300 text-color1 rounded md:bg-transparent md:text-color3 hover:bg-color1 hover:text-color2 md:px-4 md:py-2 ">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 transition duration-300 text-color1 rounded md:bg-transparent md:text-color3 hover:bg-color1 hover:text-color2 md:px-4 md:py-2 ">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--End of Navbar section  -->
+
+    <!-- Carousel section  -->
+
+    <div id="controls-carousel" class="relative mt-20" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-caro w-full overflow-hidden md:h-caro1">
+            <!-- Item 1 -->
+            <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10 h-full"
+                data-carousel-item="active">
+                <img src="img/1.jpeg"
+                    class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 h-full"
+                data-carousel-item="">
+                <img src="img/2.jpeg"
+                    class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 h-full"
+                data-carousel-item="">
+                <img src="img/3.jpeg"
+                    class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all h-full transform"
+                data-carousel-item="">
+                <img src="img/4.jpeg"
+                    class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider controls -->
+        <div
+            class="w-full h-full absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center bg-color1/50 z-30 gap-6 md:gap-12">
+            <h1 class="text-3xl md:text-7xl px-2 tracking-wider font-bold font-serif text-color2 text-center">Quickly
+                Verify Before
+                Your
+                Registration
+            </h1>
+            <a href="http://quickverify.ng/" target="_blank"
+                class="text-white md:text-lg ring-2 ring-color2 text-base transition-all duration-300 bg-color1 hover:bg-stone-700 focus:outline-none flex items-center gap-0 hover:gap-1 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Get
+                Verified <i class="ph-arrow-circle-right text-lg"></i></a>
+        </div>
+    </div>
+
+    <section class="mt-20 px-4 font-serif">
+        <h1 class="text-color1 md:text-5xl text-2xl text-center font-serif font-bold mb-10">Register Here! </h1>
+        <span
+            class="block animate-bounce flex items-center justify-center mb-10 rounded-full h-10 w-10 mx-auto bg-color1 text-color2"><i
+                class="ph-arrow-down text-xl"></i></span>
+        <div class="rounded-lg border border-color1 bg-color2 md:w-4/5 w-full h-auto mx-auto md:px-12 px-8 py-12">
+            <form action="" class="w-full h-full">
+
+
+                <!-- input for image  -->
+                <div
+                    class="flex flex-col justify-start justify-center items-center w-full gap-6 md:items-start md:mt-6">
+
+                    <div class="w-40 h-40 border border-color1 rounded flex justify-center items-center" id="container">
+                        <i class="ph-user-fill text-9xl text-color1" id="icon"></i>
+                        <img src="" alt="" style="display: none;" id="result" class="w-full h-full rounded">
+                    </div>
+                    <label class="block">
+                        <span class="sr-only">Choose profile photo</span>
+                        <input type="file" id="file" onchange="readFile();" class="block w-full text-sm text-color3
+                              file:mr-4 file:py-2 file:px-4
+                              file:rounded-full file:border-0
+                              file:text-sm file:font-semibold
+                              file:bg-stone-700 file:text-stone-200
+                              hover:file:bg-stone-900
+                            " required />
+                    </label>
+
+                </div>
+
+                <!-- inputs for names  -->
+                <div class="grid md:grid-cols-3 gap-6 mt-12">
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="surname" id="surname"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="surname"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Surname</label>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="first_name" id="first_name"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="first_name"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
+                            Name</label>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="middle_name" id="middle_name"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="middle_name"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Middle
+                            Name</label>
+                    </div>
+                </div>
+
+                <!-- inputs for sex, dob and pob  -->
+                <div class="grid md:grid-cols-3 gap-6 mt-4">
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="sex" id="sex"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="sex"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Sex</label>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="date" name="dob" id="dob"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="dob"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Date
+                            of Birth</label>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="pob" id="pob"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="pob"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Place
+                            of Birth</label>
+                    </div>
+                </div>
+
+                <!-- input for address  -->
+                <div class="relative z-0 mb-6 w-full group mt-2">
+                    <input type="text" name="address" id="address"
+                        class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                        placeholder=" " required />
+                    <label for="address"
+                        class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Resident
+                        Address</label>
+                </div>
+
+                <!-- inputs for city, state & LGA of residence address  -->
+                <div class="grid md:grid-cols-3 gap-6 mt-4">
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="city" id="city"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="city"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">City
+                            (Residence)</label>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="state" id="state"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="state"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">State
+                            (Residence)</label>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="lga" id="lga"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="lga"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">L.G.A
+                            (Residence)</label>
+                    </div>
+                </div>
+
+                <!-- inputs for city, state & LGA of hometown address  -->
+                <div class="grid md:grid-cols-3 gap-6 mt-4">
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="origin" id="origin"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="origin"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">State
+                            of Origin</label>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="localgvt" id="localgvt"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="localgvt"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Local
+                            Govt</label>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="hometown" id="hometown"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="hometown"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Home
+                            Town</label>
+                    </div>
+                </div>
+
+                <!-- inputs for maiden name, nationality and occupation  -->
+                <div class="grid md:grid-cols-3 gap-6 mt-4">
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="maidenname" id="maidenname"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="maidenname"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Maiden
+                            Name</label>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="nationality" id="nationality"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="nationality"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nationality</label>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="occupation" id="occupation"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="occupation"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Occupation</label>
+                    </div>
+                </div>
+
+                <!-- inputs for marital status, number and email  -->
+                <div class="grid md:grid-cols-3 gap-6 mt-4">
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="text" name="maritalstatus" id="maritalstatus"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="maritalstatus"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Marital
+                            Status</label>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="number" name="phonenumber" id="phonenumber"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="phonenumber"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone
+                            Number</label>
+                    </div>
+                    <div class="relative z-0 mb-6 w-full group">
+                        <input type="email" name="email" id="email"
+                            class="block py-2.5 px-0 w-full text-sm text-color1 bg-transparent border-0 border-b-2 border-color1 appearance-none focus:outline-none focus:ring-0 focus:border-color1 peer"
+                            placeholder=" " required />
+                        <label for="email"
+                            class="peer-focus:font-medium absolute text-sm text-color1  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-color3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                            Address</label>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center mt-12">
+                    <button type="submit"
+                        class="text-white md:text-md ring-2 ring-color2 text-base transition-all duration-300 bg-color1 hover:bg-stone-700 focus:outline-none flex items-center gap-0 hover:gap-1 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 uppercase">Submit
+                        <i class="ph-arrow-circle-right text-lg"></i></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="p-4 bg-color1 shadow md:px-6 md:py-8 mt-20 text-color2">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="index.html" class="flex items-center mb-4 sm:mb-0 text-2xl text-color2 font-serif gap-1">
+                <i class="ph-heart"></i>
+                <span class="self-center text-xl font-semibold whitespace-nowrap">Wed</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm text-color2 sm:mb-0">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-color2 sm:mx-auto lg:my-8">
+        <span class="block text-sm text-color2 sm:text-center">© 2022 <a href="index.html" class="hover:underline"><i
+                    class="ph-heart"></i>
+                <span class="self-center text-lg font-semibold whitespace-nowrap">Wed</span></a>. All Rights Reserved.
+        </span>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
